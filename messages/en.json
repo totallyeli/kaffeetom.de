@@ -198,5 +198,50 @@
 	"about_locations_count": "Locations",
 
 	"location_open_now": "Open now",
-	"location_closed_now": "Closed"
+	"location_closed_now": "Closed",
+
+	"nav_my_account": "My Account",
+	"nav_login": "Sign In",
+
+	"account_login_title": "Sign In",
+	"account_login_email": "Email address",
+	"account_login_password": "Password",
+	"account_login_submit": "Sign In",
+	"account_login_no_account": "Don't have an account?",
+	"account_login_register_link": "Register now",
+	"account_login_github": "Sign in with GitHub",
+	"account_login_or": "or",
+	"account_login_error": "Sign in failed. Please check your credentials.",
+
+	"account_register_title": "Create Account",
+	"account_register_name": "Name",
+	"account_register_email": "Email address",
+	"account_register_password": "Password",
+	"account_register_submit": "Register",
+	"account_register_has_account": "Already have an account?",
+	"account_register_login_link": "Sign in",
+	"account_register_error": "Registration failed. Please try again.",
+
+	"account_dashboard_title": "My Account",
+	"account_greeting": "Hello, {name}!",
+	"account_logout": "Sign Out",
+
+	"account_dashboard_orders": "My Orders",
+	"account_dashboard_orders_empty": "You don't have any orders yet.",
+	"account_dashboard_bookings": "My Appointments",
+	"account_dashboard_bookings_empty": "You don't have any appointments yet.",
+	"account_dashboard_contacts": "My Inquiries",
+	"account_dashboard_contacts_empty": "You haven't submitted any inquiries yet.",
+
+	"account_order_detail_title": "Order {orderNumber}",
+	"account_order_items": "Items",
+	"account_cancel_request": "Request Cancellation",
+	"account_cancel_confirm_title": "Request Cancellation?",
+	"account_cancel_confirm_text": "Do you really want to request a cancellation? We will get back to you.",
+	"account_cancel_confirm_button": "Request Cancellation",
+	"account_cancel_abort": "Cancel",
+	"account_cancel_pending": "Your cancellation request is being processed.",
+
+	"checkout_login_required": "Please sign in to continue.",
+	"checkout_login_hint": "You need to be signed in to place an order."
 }

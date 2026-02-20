@@ -198,5 +198,50 @@
 	"about_locations_count": "Standorte",
 
 	"location_open_now": "Jetzt geöffnet",
-	"location_closed_now": "Geschlossen"
+	"location_closed_now": "Geschlossen",
+
+	"nav_my_account": "Mein Konto",
+	"nav_login": "Anmelden",
+
+	"account_login_title": "Anmelden",
+	"account_login_email": "E-Mail-Adresse",
+	"account_login_password": "Passwort",
+	"account_login_submit": "Anmelden",
+	"account_login_no_account": "Noch kein Konto?",
+	"account_login_register_link": "Jetzt registrieren",
+	"account_login_github": "Mit GitHub anmelden",
+	"account_login_or": "oder",
+	"account_login_error": "Anmeldung fehlgeschlagen. Bitte prüfen Sie Ihre Zugangsdaten.",
+
+	"account_register_title": "Konto erstellen",
+	"account_register_name": "Name",
+	"account_register_email": "E-Mail-Adresse",
+	"account_register_password": "Passwort",
+	"account_register_submit": "Registrieren",
+	"account_register_has_account": "Bereits ein Konto?",
+	"account_register_login_link": "Zur Anmeldung",
+	"account_register_error": "Registrierung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+
+	"account_dashboard_title": "Mein Konto",
+	"account_greeting": "Hallo, {name}!",
+	"account_logout": "Abmelden",
+
+	"account_dashboard_orders": "Meine Bestellungen",
+	"account_dashboard_orders_empty": "Sie haben noch keine Bestellungen.",
+	"account_dashboard_bookings": "Meine Termine",
+	"account_dashboard_bookings_empty": "Sie haben noch keine Termine.",
+	"account_dashboard_contacts": "Meine Anfragen",
+	"account_dashboard_contacts_empty": "Sie haben noch keine Anfragen gestellt.",
+
+	"account_order_detail_title": "Bestellung {orderNumber}",
+	"account_order_items": "Artikel",
+	"account_cancel_request": "Stornierung anfragen",
+	"account_cancel_confirm_title": "Stornierung anfragen?",
+	"account_cancel_confirm_text": "Möchten Sie wirklich eine Stornierung anfragen? Wir werden uns bei Ihnen melden.",
+	"account_cancel_confirm_button": "Stornierung anfragen",
+	"account_cancel_abort": "Abbrechen",
+	"account_cancel_pending": "Ihre Stornierungsanfrage wird bearbeitet.",
+
+	"checkout_login_required": "Bitte melden Sie sich an, um fortzufahren.",
+	"checkout_login_hint": "Sie müssen angemeldet sein, um eine Bestellung aufzugeben."
 }
