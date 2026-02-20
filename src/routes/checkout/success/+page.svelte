@@ -46,7 +46,7 @@
 				</div>
 
 				<a
-					href="/bestellung?id={data.orderNumber}"
+					href="/konto/bestellungen/{data.orderNumber}"
 					class="mt-5 inline-flex rounded-lg border border-primary/20 bg-white px-5 py-2.5 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-white"
 				>
 					{m.order_status_lookup()}
