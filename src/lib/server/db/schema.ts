@@ -8,6 +8,7 @@ import {
 	text,
 	timestamp
 } from 'drizzle-orm/pg-core';
+import { user } from './auth.schema';
 
 export const categories = pgTable('categories', {
 	id: serial('id').primaryKey(),
@@ -99,6 +100,7 @@ export const orders = pgTable(
 		orderNumber: text('order_number').notNull().unique(),
 		stripeSessionId: text('stripe_session_id').unique(),
 		stripePaymentIntentId: text('stripe_payment_intent_id'),
+		userId: text('user_id').references(() => user.id, { onDelete: 'set null' }),
 		status: text('status').notNull().default('pending'),
 		fulfillmentType: text('fulfillment_type').notNull(),
 		locationId: integer('location_id').references(() => locations.id, { onDelete: 'set null' }),
@@ -122,7 +124,8 @@ export const orders = pgTable(
 		index('orders_status_idx').on(table.status),
 		index('orders_created_at_idx').on(table.createdAt),
 		index('orders_stripe_session_id_idx').on(table.stripeSessionId),
-		index('orders_order_number_idx').on(table.orderNumber)
+		index('orders_order_number_idx').on(table.orderNumber),
+		index('orders_user_id_idx').on(table.userId)
 	]
 );
 
