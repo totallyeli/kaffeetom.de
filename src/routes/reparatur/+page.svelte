@@ -36,7 +36,10 @@
 	}
 
 	async function fetchSlots() {
-		if (!selectedDate || !selectedLocation) return;
+		if (!selectedDate || !selectedLocation) {
+			availableSlots = [];
+			return;
+		}
 		try {
 			const res = await fetch(
 				`/api/booking/slots?locationId=${selectedLocation}&date=${selectedDate}`
@@ -46,13 +49,16 @@
 		} catch {
 			availableSlots = [];
 		}
+		selectedTime = '';
 	}
 
-	$effect(() => {
-		if (selectedDate && selectedLocation) {
-			fetchSlots();
-		}
-	});
+	function handleDateChange() {
+		fetchSlots();
+	}
+
+	function handleLocationChange() {
+		fetchSlots();
+	}
 
 	async function handleSubmit(e: SubmitEvent) {
 		e.preventDefault();
@@ -140,6 +146,7 @@
 						<select
 							id="bookingLocation"
 							bind:value={selectedLocation}
+							onchange={handleLocationChange}
 							class="w-full rounded-lg border border-gray-200 bg-white px-4 py-2.5 font-body text-sm"
 						>
 							{#each locations as loc}
@@ -175,6 +182,7 @@
 							type="date"
 							id="bookingDate"
 							bind:value={selectedDate}
+							onchange={handleDateChange}
 							min={today}
 							required
 							class="w-full rounded-lg border border-gray-200 bg-white px-4 py-2.5 font-body text-sm"
@@ -188,12 +196,19 @@
 							id="bookingTime"
 							bind:value={selectedTime}
 							required
-							class="w-full rounded-lg border border-gray-200 bg-white px-4 py-2.5 font-body text-sm"
+							disabled={availableSlots.length === 0}
+							class="w-full rounded-lg border border-gray-200 bg-white px-4 py-2.5 font-body text-sm disabled:cursor-not-allowed disabled:opacity-50"
 						>
-							<option value="">{m.booking_time()}</option>
-							{#each availableSlots as slot}
-								<option value={slot}>{slot}</option>
-							{/each}
+							{#if availableSlots.length === 0}
+								<option value=""
+									>{selectedDate ? 'Keine Termine verfugbar' : 'Bitte Datum wahlen'}</option
+								>
+							{:else}
+								<option value="">{m.booking_time()}</option>
+								{#each availableSlots as slot}
+									<option value={slot}>{slot}</option>
+								{/each}
+							{/if}
 						</select>
 					</div>
 				</div>
