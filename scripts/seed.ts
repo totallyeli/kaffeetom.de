@@ -100,7 +100,7 @@ async function seed() {
 			price: 22000,
 			status: 'available',
 			modelSeries: 'S',
-			image: '/uploads/products/jura-s9-avantgarde.png'
+			image: '/uploads/products/jura-s9-avantgarde.webp'
 		},
 		{
 			name: 'Jura Impressa C Serie Limited Edition',
@@ -112,7 +112,7 @@ async function seed() {
 			price: 22900,
 			status: 'available',
 			modelSeries: 'C',
-			image: '/uploads/products/jura-impressa-c-serie-limited-edition.png'
+			image: '/uploads/products/jura-impressa-c-serie-limited-edition.webp'
 		},
 		{
 			name: 'Jura C5 1. Generation',
@@ -124,7 +124,7 @@ async function seed() {
 			price: 19900,
 			status: 'available',
 			modelSeries: 'C',
-			image: '/uploads/products/jura-c5.jpg'
+			image: '/uploads/products/jura-c5.webp'
 		},
 		{
 			name: 'Jura C5 2. Generation',
@@ -136,7 +136,7 @@ async function seed() {
 			price: 21900,
 			status: 'available',
 			modelSeries: 'C',
-			image: '/uploads/products/jura-c5.jpg'
+			image: '/uploads/products/jura-c5.webp'
 		},
 		{
 			name: 'Jura Impressa J9.2',
@@ -149,7 +149,7 @@ async function seed() {
 			price: 38000,
 			status: 'available',
 			modelSeries: 'J',
-			image: '/uploads/products/jura-impressa-j9-2.jpg'
+			image: '/uploads/products/jura-impressa-j9-2.webp'
 		},
 		{
 			name: 'Jura C50 / C60',
@@ -161,7 +161,7 @@ async function seed() {
 			price: 22900,
 			status: 'available',
 			modelSeries: 'C',
-			image: '/uploads/products/jura-c50-c60.jpg'
+			image: '/uploads/products/jura-c50-c60.webp'
 		},
 		{
 			name: 'Jura F50 1. Generation',
@@ -173,7 +173,7 @@ async function seed() {
 			price: 17900,
 			status: 'available',
 			modelSeries: 'F',
-			image: '/uploads/products/jura-f50.jpg'
+			image: '/uploads/products/jura-f50.webp'
 		},
 		{
 			name: 'Jura F50 2. Generation',
@@ -185,7 +185,7 @@ async function seed() {
 			price: 22900,
 			status: 'available',
 			modelSeries: 'F',
-			image: '/uploads/products/jura-f50.jpg'
+			image: '/uploads/products/jura-f50.webp'
 		},
 		{
 			name: 'Jura J7',
@@ -197,7 +197,7 @@ async function seed() {
 			price: 29000,
 			status: 'available',
 			modelSeries: 'J',
-			image: '/uploads/products/jura-j7.jpg'
+			image: '/uploads/products/jura-j7.webp'
 		},
 		{
 			name: 'Jura Impressa F7',
@@ -209,7 +209,7 @@ async function seed() {
 			price: 28000,
 			status: 'available',
 			modelSeries: 'F',
-			image: '/uploads/products/jura-impressa-f7.jpg'
+			image: '/uploads/products/jura-impressa-f7.webp'
 		},
 		{
 			name: 'Jura Impressa E85',
@@ -221,7 +221,7 @@ async function seed() {
 			price: 18000,
 			status: 'available',
 			modelSeries: 'E',
-			image: '/uploads/products/jura-impressa-e85.jpg'
+			image: '/uploads/products/jura-impressa-e85.webp'
 		},
 		{
 			name: 'Jura F70',
@@ -233,7 +233,7 @@ async function seed() {
 			price: 17000,
 			status: 'available',
 			modelSeries: 'F',
-			image: '/uploads/products/jura-f70.jpg'
+			image: '/uploads/products/jura-f70.webp'
 		},
 		{
 			name: 'Jura Impressa E50',
@@ -245,7 +245,7 @@ async function seed() {
 			price: 12000,
 			status: 'available',
 			modelSeries: 'E',
-			image: '/uploads/products/jura-impressa-e50.jpg'
+			image: '/uploads/products/jura-impressa-e50.webp'
 		},
 		{
 			name: 'Jura E25 / E85',
@@ -257,7 +257,7 @@ async function seed() {
 			price: 17000,
 			status: 'available',
 			modelSeries: 'E',
-			image: '/uploads/products/jura-e25-e85.jpg'
+			image: '/uploads/products/jura-e25-e85.webp'
 		},
 		{
 			name: 'Jura Impressa E40 / E70 / E75',
@@ -269,7 +269,7 @@ async function seed() {
 			price: 15000,
 			status: 'available',
 			modelSeries: 'E',
-			image: '/uploads/products/jura-impressa-e40-e70-e75.jpg'
+			image: '/uploads/products/jura-impressa-e40-e70-e75.webp'
 		},
 		{
 			name: 'Jura XS9 One Touch',
@@ -281,7 +281,7 @@ async function seed() {
 			price: 28000,
 			status: 'available',
 			modelSeries: 'XS',
-			image: '/uploads/products/jura-xs9-one-touch.png'
+			image: '/uploads/products/jura-xs9-one-touch.webp'
 		},
 		{
 			name: 'Jura Giga 5',
@@ -295,7 +295,7 @@ async function seed() {
 			status: 'available',
 			condition: 'Gebrauchsspuren',
 			modelSeries: 'Giga',
-			image: '/uploads/products/jura-giga-5.jpg'
+			image: '/uploads/products/jura-giga-5.webp'
 		},
 		{
 			name: 'Jura S9',
@@ -307,7 +307,7 @@ async function seed() {
 			price: 15000,
 			status: 'available',
 			modelSeries: 'S',
-			image: '/uploads/products/jura-s9.jpg'
+			image: '/uploads/products/jura-s9.webp'
 		},
 		{
 			name: 'Jura D4',
@@ -319,7 +319,7 @@ async function seed() {
 			price: 28000,
 			status: 'available',
 			modelSeries: 'D',
-			image: '/uploads/products/jura-d4.jpg'
+			image: '/uploads/products/jura-d4.webp'
 		},
 		{
 			name: 'Jura J9.3 Premium',
@@ -333,7 +333,7 @@ async function seed() {
 			price: 58000,
 			status: 'sold',
 			modelSeries: 'J',
-			image: '/uploads/products/jura-j9-3-premium.jpg'
+			image: '/uploads/products/jura-j9-3-premium.webp'
 		}
 	];
 

@@ -88,7 +88,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
-	<link rel="apple-touch-icon" href="/uploads/logo/kaffeetom-logo.jpg" />
+	<link rel="apple-touch-icon" href="/uploads/logo/kaffeetom-logo.webp" />
 	<link rel="canonical" href={canonicalUrl} />
 
 	<link rel="alternate" hreflang="de" href={SITE_URL} />
@@ -107,7 +107,7 @@
 
 	<meta property="og:title" content={m.seo_og_title()} />
 	<meta property="og:description" content={m.seo_og_description()} />
-	<meta property="og:image" content={`${SITE_URL}/uploads/logo/kaffeetom-logo.jpg`} />
+	<meta property="og:image" content={`${SITE_URL}/uploads/logo/kaffeetom-logo.webp`} />
 	<meta property="og:url" content={canonicalUrl} />
 	<meta property="og:type" content="website" />
 	<meta property="og:locale" content={ogLocale} />
@@ -119,7 +119,7 @@
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content={m.seo_og_title()} />
 	<meta name="twitter:description" content={m.seo_twitter_description()} />
-	<meta name="twitter:image" content={`${SITE_URL}/uploads/logo/kaffeetom-logo.jpg`} />
+	<meta name="twitter:image" content={`${SITE_URL}/uploads/logo/kaffeetom-logo.webp`} />
 
 	{@html `<script type="application/ld+json">${JSON.stringify(structuredData)}</script>`}
 

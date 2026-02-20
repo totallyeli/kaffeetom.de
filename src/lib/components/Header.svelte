@@ -162,15 +162,16 @@
 		isScrolled ? 'bg-cream/95 py-2 shadow-md backdrop-blur-sm' : 'bg-cream/90 py-4 backdrop-blur-sm'
 	}`}
 >
-	<div class="container mx-auto flex items-center justify-between gap-3 px-4">
-		<a
-			href={localizeHref('/')}
-			class="shrink-0 font-display text-xl font-bold tracking-wide text-primary"
-		>
-			KAFFEETOM
+	<div class="relative container mx-auto flex items-center justify-between px-4">
+		<a href={localizeHref('/')} class="shrink-0">
+			<img
+				src="/uploads/logo/kaffeetom-logo.webp"
+				alt="KAFFEETOM"
+				class="h-10 w-auto object-contain"
+			/>
 		</a>
 
-		<nav class="hidden items-center gap-1 lg:flex">
+		<nav class="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 lg:flex">
 			{#each filteredCategories as cat}
 				{#if cat.links.length === 1}
 					<a
