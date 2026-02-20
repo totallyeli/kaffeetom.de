@@ -28,6 +28,10 @@ interface CheckoutBody {
 export const POST: RequestHandler = async (event) => {
 	const { request, url } = event;
 
+	if (!event.locals.user) {
+		throw error(401, 'Authentication required');
+	}
+
 	let body: unknown;
 	try {
 		body = await request.json();
@@ -121,12 +125,13 @@ export const POST: RequestHandler = async (event) => {
 		.insert(orders)
 		.values({
 			orderNumber,
+			userId: event.locals.user.id,
 			status: 'pending',
 			fulfillmentType,
 			locationId: locationDbId,
 			customerName,
 			customerPhone,
-			customerEmail: customerEmail || null,
+			customerEmail: customerEmail || event.locals.user.email,
 			shippingAddress: fulfillmentType === 'shipping' ? shippingAddress : null,
 			totalAmount,
 			shippingCost,

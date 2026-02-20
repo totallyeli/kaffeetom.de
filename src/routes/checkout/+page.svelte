@@ -5,11 +5,13 @@
 
 	type FulfillmentType = 'pickup' | 'shipping';
 
+	let { data } = $props();
+
 	let fulfillmentType = $state<FulfillmentType>('pickup');
 	let locationId = $state(locations[0].id);
-	let customerName = $state('');
+	let customerName = $state(data.user?.name ?? '');
 	let customerPhone = $state('');
-	let customerEmail = $state('');
+	let customerEmail = $state(data.user?.email ?? '');
 	let street = $state('');
 	let city = $state('');
 	let zip = $state('');
