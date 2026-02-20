@@ -9,7 +9,7 @@
 	import { page } from '$app/state';
 	import { browser } from '$app/environment';
 
-	let { children } = $props();
+	let { children, data } = $props();
 
 	$effect(() => {
 		if (!browser) return;
@@ -139,7 +139,7 @@
 </a>
 
 {#if !hideMainNav}
-	<Header />
+	<Header user={data.user} />
 {/if}
 <main id="main" class={hideMainNav ? '' : 'pt-16'}>
 	{@render children()}

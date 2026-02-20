@@ -7,6 +7,10 @@
 	import CartButton from '$lib/components/CartButton.svelte';
 	import CartDrawer from '$lib/components/CartDrawer.svelte';
 
+	let {
+		user
+	}: { user?: { id: string; name: string; email: string; role?: string | null } | null } = $props();
+
 	let isLangMenuOpen = $state(false);
 	let isMobileMenuOpen = $state(false);
 	let isScrolled = $state(false);
@@ -42,7 +46,7 @@
 		links: NavLink[];
 	}
 
-	const navCategories: NavCategory[] = [
+	let navCategories = $derived<NavCategory[]>([
 		{
 			id: 'products',
 			label: m.nav_cat_products,
@@ -63,9 +67,13 @@
 		{
 			id: 'info',
 			label: m.nav_cat_info,
-			links: [{ href: '/bestellung', label: m.nav_order_status, shopOnly: true }]
+			links: [
+				...(user
+					? [{ href: '/konto', label: m.nav_my_account }]
+					: [{ href: '/konto/login', label: m.nav_login }])
+			]
 		}
-	];
+	]);
 
 	let filteredCategories = $derived(
 		navCategories
@@ -322,6 +330,28 @@
 			{#if shopEnabled}
 				<CartButton onclick={() => (isCartOpen = true)} />
 			{/if}
+
+			<!-- User account icon -->
+			<a
+				href={localizeHref(user ? '/konto' : '/konto/login')}
+				class="flex items-center justify-center rounded-lg p-2 text-coffee transition-colors hover:bg-coffee/5 hover:text-primary"
+				aria-label={user ? m.nav_my_account() : m.nav_login()}
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="h-5 w-5"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+					stroke-width="1.5"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+					/>
+				</svg>
+			</a>
 
 			<div class="relative">
 				<button
