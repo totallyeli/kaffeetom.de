@@ -21,6 +21,9 @@ Thumbs.db
 # Paraglide (generated)
 /src/lib/paraglide
 
+# Symlinked projects
+sarayli-doener.de
+
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
