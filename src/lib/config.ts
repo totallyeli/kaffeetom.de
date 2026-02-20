@@ -236,7 +236,7 @@ export const seoDefaults = {
 		'We have a wide selection of used Jura fully automatic coffee machines. Sales, repair and maintenance in Helmstadt and Mannheim.',
 	defaultKeywords:
 		'Jura Kaffeevollautomat, gebraucht, Verkauf, Reparatur, Wartung, Helmstadt, Mannheim, Kaffeetom',
-	ogImage: '/images/og-default.jpg',
+	ogImage: '/uploads/logo/kaffeetom-logo.webp',
 	locale: 'de_DE',
 	localeAlternate: 'en_US'
 };

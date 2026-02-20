@@ -35,7 +35,7 @@
 			name: product.name,
 			nameEn: product.nameEn ?? undefined,
 			price: product.price,
-			image: image ?? '/uploads/products/placeholder.jpg'
+			image: image ?? '/uploads/products/placeholder.webp'
 		});
 	}
 </script>

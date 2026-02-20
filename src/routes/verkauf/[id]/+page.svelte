@@ -27,7 +27,7 @@
 			name: product.name,
 			nameEn: product.nameEn ?? undefined,
 			price: product.price,
-			image: primaryImage ?? '/uploads/products/placeholder.jpg'
+			image: primaryImage ?? '/uploads/products/placeholder.webp'
 		});
 	}
 </script>
